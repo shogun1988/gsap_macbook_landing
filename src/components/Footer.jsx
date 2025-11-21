@@ -24,6 +24,27 @@ const Footer = () => {
                     ))}
                 </ul>
             </div>
+            <button
+                type="button"
+                className="scroll-to-top"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                aria-label="Scroll to top"
+                style={{
+                    position: 'fixed',
+                    right: 20,
+                    bottom: 20,
+                    padding: '0.6rem 0.8rem',
+                    borderRadius: '999px',
+                    border: 'none',
+                    background: '#000',
+                    color: '#fff',
+                    cursor: 'pointer',
+                    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+                    zIndex: 9999
+                }}
+            >
+                ↑
+            </button>
         </footer>
     )
 }
